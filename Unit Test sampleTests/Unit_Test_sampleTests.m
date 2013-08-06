@@ -148,6 +148,32 @@
     
 }
 
+- (void)testDeletePerson
+{
+    DGKPersonsController *controller = [[DGKPersonsController alloc]init];
+    
+    Person *person __unused;
+    person = [controller newPerson];
+    [controller saveChanges];
+    
+    NSArray *objects = [controller list];
+    
+    XCTAssertNotNil(objects, @"Failed to find any person records");
+    XCTAssertTrue([objects count] > 0, @"There must be some records");
+    
+    for (Person *object in objects)
+    {
+        [controller deletePerson:object];
+    }
+
+    [controller saveChanges];
+    
+    objects = [controller list];
+    
+    XCTAssertNotNil(objects, @"Failed to find any person records");
+    XCTAssertTrue([objects count] == 0, @"There must be no records");
+}
+
 - (void)testCountPerson
 {
     DGKPersonsController *controller = [[DGKPersonsController alloc]init];

@@ -13,6 +13,7 @@
 
 - (NSArray *)list;
 - (Person *)newPerson;
+- (void)deletePerson:(Person *)object;
 - (void)saveChanges;
 
 @end

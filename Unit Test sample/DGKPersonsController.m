@@ -10,11 +10,11 @@
 #import "DGKCoreDataHelper.h"
 
 @interface DGKPersonsController ()
-
-@property (nonatomic, retain) NSString *entityName;
-@property (nonatomic, retain) NSManagedObjectContext *context;
-@property (nonatomic, retain) NSEntityDescription *entityDesc;
-
+{
+    NSString *_entityName;
+    NSManagedObjectContext *_context;
+    NSEntityDescription *_entityDesc;
+}
 @end
 
 @implementation DGKPersonsController
@@ -53,6 +53,11 @@
                     insertIntoManagedObjectContext:_context];
 
     return rValue;
+}
+
+- (void)deletePerson:(Person *)object
+{
+    [_context deleteObject:object];
 }
 
 - (void)saveChanges
