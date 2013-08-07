@@ -43,6 +43,21 @@
     return objects;
 }
 
+- (NSArray *)findWithFirstName:(NSString *)first
+                   andLastName:(NSString *)last
+{
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:_entityDesc];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(firstName LIKE[c] %@) AND (lastName LIKE[c] %@)", first, last];
+    [request setPredicate:predicate];
+    
+    NSError *error;
+    NSArray *objects = [_context executeFetchRequest:request
+                                               error:&error];
+    return objects;
+}
+
 - (Person *)newPerson
 {
     

@@ -183,4 +183,30 @@
     XCTAssertTrue([objects count] >= 0, @"There must be at least 0 records");
 }
 
+- (void)testFindPerson
+{
+    DGKPersonsController *controller = [[DGKPersonsController alloc]init];
+    
+    Person *person;
+    person = [controller newPerson];
+    person.firstName = @"First";
+    person.lastName = @"Last";
+    person = [controller newPerson];
+    person.firstName = @"Last";
+    person.lastName = @"First";
+    [controller saveChanges];
+    
+    NSArray *objects = [controller findWithFirstName:@"First"
+                                         andLastName:@"Last"];
+    
+    XCTAssertNotNil(objects, @"Failed to find any person records");
+    XCTAssertTrue([objects count] == 1, @"There must be one record");
+    
+    for (Person *object in objects)
+    {
+        XCTAssertTrue([object.firstName isEqualToString:@"First"] &&
+                      [object.lastName isEqualToString:@"Last"]);
+    }
+}
+
 @end
