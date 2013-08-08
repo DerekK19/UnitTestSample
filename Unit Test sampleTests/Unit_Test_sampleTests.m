@@ -10,6 +10,7 @@
 
 #import "DGKCoreDataHelper.h"
 #import "DGKPersonsController.h"
+#import "DGKAddressesController.h"
 #import "Address.h"
 
 @interface Unit_Test_sampleTests : XCTestCase
@@ -206,6 +207,54 @@
     {
         XCTAssertTrue([object.firstName isEqualToString:@"First"] &&
                       [object.lastName isEqualToString:@"Last"]);
+    }
+}
+
+- (void)testAddAddress
+{
+    DGKPersonsController *pController = [[DGKPersonsController alloc]init];
+    DGKAddressesController *aController = [[DGKAddressesController alloc]init];
+    
+    Address *address = [aController newAddress];
+    address.houseNumber = [NSNumber numberWithInt:1];
+    address.streetName = @"Street";
+    address.cityName = @"City";
+    address.postCode = [NSNumber numberWithInt:1234];
+    [aController saveChanges];
+    
+    Person *person = [pController newPerson];
+    person.firstName = @"First";
+    person.lastName = @"Last";
+    person.livesAt = address;
+    [pController saveChanges];
+    
+    NSArray *objects = [pController list];
+    
+    XCTAssertNotNil(objects, @"Failed to find any person records");
+    XCTAssertTrue([objects count] > 0, @"There must be some person records");
+    
+    for (Person *object in objects)
+    {
+        XCTAssertTrue([object.firstName isEqualToString:@"First"] &&
+                      [object.lastName isEqualToString:@"Last"] &&
+                      [object.livesAt.houseNumber intValue] == 1 &&
+                      [object.livesAt.streetName isEqualToString:@"Street"] &&
+                      [object.livesAt.cityName isEqualToString:@"City"] &&
+                      [object.livesAt.postCode intValue] == 1234);
+    }
+    
+    objects = [aController list];
+
+    XCTAssertNotNil(objects, @"Failed to find any address records");
+    XCTAssertTrue([objects count] > 0, @"There must be some address records");
+    
+    for (Address *object in objects) {
+        XCTAssertTrue([object.houseNumber integerValue] == 1 &&
+                      [object.streetName isEqualToString:@"Street"] &&
+                      [object.cityName isEqualToString:@"City"] &&
+                      [object.postCode intValue] == 1234 &&
+                      [object.livesHere.firstName isEqualToString:@"First"] &&
+                      [object.livesHere.lastName isEqualToString:@"Last"]);
     }
 }
 

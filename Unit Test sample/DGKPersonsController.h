@@ -7,15 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DGKBaseController.h"
 #import "Person.h"
 
-@interface DGKPersonsController : NSObject
+@interface DGKPersonsController : DGKBaseController
 
 - (NSArray *)list;
 - (NSArray *)findWithFirstName:(NSString *)first
                    andLastName:(NSString *)last;
 - (Person *)newPerson;
 - (void)deletePerson:(Person *)object;
-- (void)saveChanges;
 
 @end

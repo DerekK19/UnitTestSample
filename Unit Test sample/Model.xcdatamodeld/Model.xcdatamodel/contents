@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3381.3" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3389" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Address" representedClassName="Address" syncable="YES">
         <attribute name="cityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="houseNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="postCode" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="streetName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="peopleLiveHere" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="livesAt" inverseEntity="Person" syncable="YES"/>
+        <relationship name="livesHere" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="livesAt" inverseEntity="Person" syncable="YES"/>
     </entity>
     <entity name="Person" representedClassName="Person" syncable="YES">
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="livesAt" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Address" inverseName="peopleLiveHere" inverseEntity="Address" syncable="YES"/>
+        <relationship name="livesAt" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Address" inverseName="livesHere" inverseEntity="Address" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Person" positionX="-56" positionY="-324" width="128" height="90"/>
-        <element name="Address" positionX="99" positionY="-171" width="128" height="103"/>
+        <element name="Address" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Person" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

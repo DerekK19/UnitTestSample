@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7195AFA317B0609C00DB082C /* DGKPersonsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7124E05417B05F5800901E86 /* DGKPersonsController.m */; };
+		719F858F17B1EA9000B8B145 /* DGKAddressesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 719F858E17B1EA9000B8B145 /* DGKAddressesController.m */; };
+		719F859817B1F3C400B8B145 /* DGKBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 719F859717B1F3C400B8B145 /* DGKBaseController.m */; };
 		71BE080017AF18080047204E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BE07FF17AF18080047204E /* Foundation.framework */; };
 		71BE080217AF18080047204E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BE080117AF18080047204E /* CoreGraphics.framework */; };
 		71BE080417AF18080047204E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BE080317AF18080047204E /* UIKit.framework */; };
@@ -45,6 +47,10 @@
 /* Begin PBXFileReference section */
 		7124E05317B05F5800901E86 /* DGKPersonsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DGKPersonsController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		7124E05417B05F5800901E86 /* DGKPersonsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DGKPersonsController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		719F858D17B1EA9000B8B145 /* DGKAddressesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGKAddressesController.h; sourceTree = "<group>"; };
+		719F858E17B1EA9000B8B145 /* DGKAddressesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGKAddressesController.m; sourceTree = "<group>"; };
+		719F859617B1F3C400B8B145 /* DGKBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGKBaseController.h; sourceTree = "<group>"; };
+		719F859717B1F3C400B8B145 /* DGKBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGKBaseController.m; sourceTree = "<group>"; };
 		71BE07FC17AF18080047204E /* Unit Test sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unit Test sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BE07FF17AF18080047204E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		71BE080117AF18080047204E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,8 +74,8 @@
 		71BE082E17AF18080047204E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		71BE083017AF18080047204E /* Unit_Test_sampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Unit_Test_sampleTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		71BF4CA717AF1BFB0075C45E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		71BF4CA817AF1DDF0075C45E /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Address.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		71BF4CA917AF1DDF0075C45E /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Address.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		71BF4CA817AF1DDF0075C45E /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Address.h; sourceTree = "<group>"; };
+		71BF4CA917AF1DDF0075C45E /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Address.m; sourceTree = "<group>"; };
 		71BF4CAD17AF1E030075C45E /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Person.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		71BF4CAE17AF1E030075C45E /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Person.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		71BF4CB117AF24ED0075C45E /* DGKCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DGKCoreDataHelper.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -124,8 +130,12 @@
 		7124E05217B05F2D00901E86 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				719F859617B1F3C400B8B145 /* DGKBaseController.h */,
+				719F859717B1F3C400B8B145 /* DGKBaseController.m */,
 				7124E05317B05F5800901E86 /* DGKPersonsController.h */,
 				7124E05417B05F5800901E86 /* DGKPersonsController.m */,
+				719F858D17B1EA9000B8B145 /* DGKAddressesController.h */,
+				719F858E17B1EA9000B8B145 /* DGKAddressesController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -335,10 +345,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				71BF4CAF17AF1EE00075C45E /* Person.m in Sources */,
+				719F859817B1F3C400B8B145 /* DGKBaseController.m in Sources */,
 				71BE080C17AF18080047204E /* main.m in Sources */,
 				71BE081C17AF18080047204E /* DGKSecondViewController.m in Sources */,
 				71BF4CB517AF36800075C45E /* Model.xcdatamodeld in Sources */,
 				71BE081017AF18080047204E /* DGKBAppDelegate.m in Sources */,
+				719F858F17B1EA9000B8B145 /* DGKAddressesController.m in Sources */,
 				71BF4CAA17AF1DDF0075C45E /* Address.m in Sources */,
 				7195AFA317B0609C00DB082C /* DGKPersonsController.m in Sources */,
 				71BE081917AF18080047204E /* DGKFirstViewController.m in Sources */,
