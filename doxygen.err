@@ -1,0 +1,43 @@
+warning: failed to open layout file 'DoxygenLayout.xml' for reading!
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:13: warning: Compound DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/Address.h:15: warning: Compound Address is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKAddressesController.h:14: warning: Compound DGKAddressesController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKPersonsController.h:14: warning: Compound DGKPersonsController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/Person.h:15: warning: Compound Person is not documented.
+Project logo './icon@2x.png' specified by PROJECT_LOGO does not exist!
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/Address.h:16: warning: Member cityName (property) of class Address is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/Address.h:17: warning: Member houseNumber (property) of class Address is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/Address.h:18: warning: Member postCode (property) of class Address is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/Address.h:19: warning: Member streetName (property) of class Address is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/Address.h:20: warning: Member country (property) of class Address is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/Address.h:21: warning: Member livesHere (property) of class Address is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKAddressesController.h:15: warning: Member list() (function) of class DGKAddressesController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKAddressesController.h:16: warning: Member newAddress() (function) of class DGKAddressesController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:19: warning: Member initWithEntityName:(NSString *name) (function) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:20: warning: Member getRequest() (function) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:21: warning: Member executeFetchRequest:(NSFetchRequest *request) (function) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:22: warning: Member saveChanges() (function) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:14: warning: Member _entityName (variable) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:15: warning: Member _context (variable) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:16: warning: Member _entityDesc (variable) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:19: warning: Member initWithEntityName:(NSString *name) (function) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:20: warning: Member getRequest() (function) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:21: warning: Member executeFetchRequest:(NSFetchRequest *request) (function) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:22: warning: Member saveChanges() (function) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:14: warning: Member _entityName (variable) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:15: warning: Member _context (variable) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:16: warning: Member _entityDesc (variable) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKPersonsController.h:15: warning: Member list() (function) of class DGKPersonsController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKPersonsController.h:17: warning: Member findWithFirstName:andLastName:(NSString *first,[andLastName] NSString *last) (function) of class DGKPersonsController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKPersonsController.h:18: warning: Member newPerson() (function) of class DGKPersonsController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKPersonsController.h:19: warning: Member deletePerson:(Person *object) (function) of class DGKPersonsController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:19: warning: Member initWithEntityName:(NSString *name) (function) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:20: warning: Member getRequest() (function) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:21: warning: Member executeFetchRequest:(NSFetchRequest *request) (function) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:22: warning: Member saveChanges() (function) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:14: warning: Member _entityName (variable) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:15: warning: Member _context (variable) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/DGKBaseController.h:16: warning: Member _entityDesc (variable) of class DGKBaseController is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/Person.h:16: warning: Member firstName (property) of class Person is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/Person.h:17: warning: Member lastName (property) of class Person is not documented.
+/Users/derekk/Solutions/UnitTestSample/Unit Test sample/Person.h:18: warning: Member livesAt (property) of class Person is not documented.

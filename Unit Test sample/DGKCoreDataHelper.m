@@ -20,7 +20,6 @@ NSManagedObjectContext *testingContext;
 
 + (NSManagedObjectContext *) getManagedObjectContext
 {
-    NSLog(@"Testing context = 0x%08X", (uint)testingContext);
     if (testingContext != nil)
     {
         return testingContext;
